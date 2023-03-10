@@ -1,0 +1,25 @@
+폴더안에 파일
+
+소스트리에서 스토리지올리고-커밋-푸쉬
+
+
+노트북>
+깃허브-저장소-주소복사
+
+소스트리에서 클론-주소넣기
+
+-atMediaRule.html
+@media (조건) {스타일}
+
+-gradient.html
+background: linear-gradient();
+background: linear-gradient(to right);
+repeating-linear-gradient();
+radial-gradient();
+radial-gradient(circle);
+repeating-radial-gradient();
+repeating-linear-gradient();
+
+-
+
+
