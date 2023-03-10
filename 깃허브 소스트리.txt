@@ -1,4 +1,4 @@
-폴더안에 파일
+깃허브, 소스트리 -> 만든폴더안에 파일
 
 소스트리에서 스토리지올리고-커밋-푸쉬
 
@@ -20,6 +20,29 @@ radial-gradient(circle);
 repeating-radial-gradient();
 repeating-linear-gradient();
 
--
+-transform2dm
+#translate{}
+#rotate{}
+tranform:tranlate()
+tranform:ratate()
+tranform:scale-in()
+tranform:scale-de()
+
+-transform2d
+
+-2d button
+position:relative;
+transform:translate(0px, 5px);
+
+-transform3d
+.box01{perspective:200px};
+transform:rotateX
+transform:translateY
+transform:scaleZ
+transform:rotateX();transform-origin:
+
+-transition
+transition-timing-function
+
 
 
