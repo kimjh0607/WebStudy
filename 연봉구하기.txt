@@ -1,0 +1,46 @@
+package test1;
+
+public class Developer {
+	Developer() {}
+	
+	private String name;
+	private int career; //연차
+	int salary;
+	
+	public void level(int career) {
+		this.career=career;
+		if(career<3) {          //2800
+			System.out.println("Beginner");
+		}else if(career<7){     //3500
+			System.out.println("Junior");
+		}else if(career>=7){    //4500
+			System.out.println("Senior");
+		}
+		
+					
+	}
+	public void salary(int career) {
+		this.career=career;
+		salary=2800;
+		int salary2 = salary+700;
+		int salary3 = salary2+1000;
+		if(career<3) {
+			salary+=100*career;
+		}else if(career<7) {
+			salary2+=100*career;
+		}else if(career>=7) {
+			salary3+=100*career;
+		}
+		System.out.println();
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		Developer dev = new Developer();
+		
+		
+	}
+}
+//level단계계산 salary연봉계산 name(string) career(int) 단계 3년미만 2800/7년미만 3500/7년이상 4500
+연봉계산 단계별 기준연봉 + (100*경력)
