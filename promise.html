@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible", content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+    <script>
+        //비동기식 - 동작완료전에 다음동작
+//        console.log('hello');
+//        setTimeout(()=>console.log('Bye'),2000);
+//        console.log('hello again');
+
+        function goToSchool(){
+            console.log('학교에 갑니다.');
+        }
+        function arrive_w(){
+            setTimeout(()=>console.log('걸어서 학교도착'),1000);
+        }
+        function study(){
+            console.log('공부합시다.');
+        }
+        function arrive_r(){
+            return new Promise(function(resolve){
+                setTimeout(function(){
+                    console.log('달려서 학교도착');
+                    resolve();
+                },1000);
+            })
+        }
+        goToSchool();
+        arrive_r().then(()=>study());
+//        arrive_w();
+//        study();
+        function arrive_r(){
+            return new Promise(function(resolve, reject){
+            setTimeout(function(){
+                var status = Math.floor(Math.random()*2);
+                if(status===1){
+                    resolve();
+                }else{
+                    reject();
+                }
+            },1000);
+        });
+    }
+    function cure(){
+        console.log('병원으로 가자');
+    }
+    goToSchool();
+    arrive_r()
+    .then(function(msg){
+        console.log(msg);
+        study();
+    })
+    .catch(function(ac){
+        console.log(ac);
+        cure();
+    });
+    
+
+
+
+
+    </script>
+</body>
+</html>
