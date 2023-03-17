@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible", content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멀티미티어</title>
+</head>
+<body>
+    <h1>video</h1>
+    <video controls loop style="width: 500px; height: 300px;" poster="../0307/image/midnight.jpg">
+        <source src="./media/170724_15_Setangibeach!!.mp4" type="video/mp4">
+        <source src="./media/180301_16_B_LunarYearsParade_20.mp4" type="video/mp4">
+        <track src="#" kind="subtitles" srclang="ko" label="한국어">
+        <track src="#" kind="subtitles" srclang="en" label="English">
+        이 브라우저는 video 요소를 지원하지 않습니다.
+    </video>
+    <h1>audio</h1>
+    <audio controls loop autoplay>
+        <source src="./media/Music Insiders by FMA - Music Insiders by FMA - Episode 4 with Siddhartha Corsus!!.mp3" 
+        type="audio/mp3" preload="auto">
+        <source src="./media/Rinne - 영원한 약속(永遠約束).mp3" type="audio/mp3">
+        이 브라우저는 audio 요소를 지원하지 않습니다.
+    </audio>
+    <br>
+    <object data="./media/멀티미티어.pdf">미지원</object><br>
+    <object data="../0307/image/midnight.jpg" width="200px" height="100px">미지원</object><br>
+    <object data="../0316/event.html">미지원</object><br>
+    <embed src="./media/PDFsample.pdf">
+    <embed src="../0307/image/night.jpg" width="200px" height="100px">
+    <embed src="../0316/event.html" style="width: 1000px; height: 300px;">
+</body>
+</html>
