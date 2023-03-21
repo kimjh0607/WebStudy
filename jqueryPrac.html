@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible", content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity=""></script>
+<style>
+    .fod{font-weight: bold; font-size: 22px;}
+</style>
+</head>
+<body>
+    <h3>오늘 점심은 뭘 먹었나요?</h3>
+    <div><input type="radio" id="kor">한식</div>
+    <div><input type="radio" id="chn">중식</div>
+    <div><input type="radio" id="jpn">일식</div>
+    <div><input type="radio" id="usa">양식</div>
+    <div class="fod" id="kor1">한식</div>
+    <div class="fod" id="chn1">중식</div>
+    <div class="fod" id="jpn1">일식</div>
+    <div class="fod" id="usa1">양식</div>
+    <h3>오늘 점심은 뭘 먹었나요?</h3>
+    <div class="fod" id="kor2">한식</div>
+    <div class="fod" id="chn2">중식</div>
+    <div class="fod" id="jpn2">일식</div>
+    <div class="fod" id="usa2">양식</div>
+    <script>
+        $(function(){$('#kor').click(function(){$('#kor1').append('■');});});
+        $(function(){$('#chn').click(function(){$('#chn1').append('■');});});
+        $(function(){$('#jpn').click(function(){$('#jpn1').append('■');});});        
+        $(function(){$('#usa').click(function(){$('#usa1').append('■');});});
+    </script>
+    <script>
+        $(function(){$('#kor2').click(function(){$('#kor2').append('■');});});
+        $(function(){$('#chn2').click(function(){$('#chn2').append('■');});});
+        $(function(){$('#jpn2').click(function(){$('#jpn2').append('■');});});
+        $(function(){$('#usa2').click(function(){$('#usa2').append('■');});});
+    </script>
+</body>
+</html>
